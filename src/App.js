@@ -21,7 +21,7 @@ function App() {
       <p>{count}</p>
       <button onClick={(e) => decrement(e)}>decrement</button>
       <button onClick={(e) => increment(e)}>increment</button>
-      <p>hello</p>
+      <p>HELLo</p>
     </>
   );
 }
