@@ -1,27 +1,29 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { useState } from "react";
+import React, { useEffect } from "react";
+import Hero from "./contents/hero/Hero";
 
 function App() {
-  const [count, setCount] = useState(0);
+  useEffect(() => {
+    window.onscroll = () => {
+      showHiddenItems();
+    };
+  }, []);
 
-  const increment = (e) => {
-    e.preventDefault();
-    setCount(count + 1);
-  };
+  const showHiddenItems = () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
 
-  const decrement = (e) => {
-    e.preventDefault();
-    setCount(count - 1);
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((element) => observer.observe(element));
   };
 
   return (
     <>
-      <p>{count}</p>
-      <button onClick={(e) => decrement(e)}>decrement</button>
-      <button onClick={(e) => increment(e)}>increment</button>
-      <p>HELLo</p>
+      <Hero />
     </>
   );
 }

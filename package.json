@@ -6,10 +6,16 @@
     "@babel/preset-env": "^7.24.6",
     "@babel/preset-react": "^7.24.6",
     "@babel/register": "^7.24.6",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "express": "^4.19.2",
+    "find-free-ports": "^3.1.1",
     "fs": "^0.0.1-security",
     "ignore-styles": "^5.0.1",
     "path": "^0.12.7",
@@ -24,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ssr": "node server/index.js",
-    "r": "react-scripts build"
+    "r": "npm run build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,0 +1,28 @@
+.drop__content {
+  width: 100vw;
+  background-color: var(--color-black);
+  left: 0px;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.3s ease;
+}
+
+.drop:hover .drop__content {
+  border-top: 1px solid #2a2d2e;
+  height: 400px;
+}
+
+.drop__content > * {
+  opacity: 0;
+  transform: translateY(-100%);
+  filter: blur(5);
+  transition: opacity 1s ease, transform 0.5s ease, filter 1s ease;
+}
+
+.drop:hover .drop__content > * {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}

@@ -1,13 +1,105 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--color-white);
+}
+
+:root {
+  --color-blue: #00a6fb;
+  --color-grey: #e0e0e0;
+  --color-white: #f5f5f5;
+  --color-black: #212121;
+
+  --h1-fs: 64px;
+  --h2-fs: 48px;
+  --h3-fs: 32px;
+  --p-fs: 20px;
+  --detail-fs: 16px;
+}
+
+.c-white {
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: var(--h1-fs);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--h2-fs);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--h3-fs);
+  font-weight: 400;
+}
+
+p {
+  font-size: var(--p-fs);
+  font-weight: 400;
+}
+
+a {
+  font-size: var(--detail-fs);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button--secondary {
+  padding: 8px 15px;
+  border-radius: 100px;
+  border: 2px solid var(--color-blue);
+  background-color: transparent;
+  color: var(--color-blue);
+  font-size: var(--detail-fs);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-blue);
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.button--primary {
+  padding: 8px 15px;
+  border-radius: 100px;
+  border: 2px solid var(--color-blue);
+  background-color: var(--color-blue);
+  color: var(--color-black);
+  font-size: var(--detail-fs);
+  font-weight: 600;
+  transition: padding 0.3s cubic-bezier(0.41, -0.35, 0.55, 1.31);
+}
+
+.button--primary:hover {
+  padding: 8px 30px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: opacity 1s ease, filter 1s ease, transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }

@@ -1,0 +1,25 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown__content {
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: collapse;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: transform 0.3s ease, opacity 1s ease;
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown__content {
+  visibility: visible;
+  transform: translateY(0%);
+  opacity: 1;
+}
