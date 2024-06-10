@@ -103,3 +103,33 @@ button {
     transition: none;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  :root {
+    --h1-fs: 56px;
+    --h2-fs: 40px;
+    --h3-fs: 30px;
+    --p-fs: 16px;
+    --detail-fs: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --h1-fs: 50px;
+    --h2-fs: 35px;
+    --h3-fs: 25px;
+    --p-fs: 14px;
+    --detail-fs: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --h1-fs: 50px;
+    --h2-fs: 30px;
+    --h3-fs: 20px;
+    --p-fs: 13px;
+    --detail-fs: 13px;
+  }
+}

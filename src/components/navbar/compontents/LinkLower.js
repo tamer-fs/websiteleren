@@ -3,7 +3,12 @@ import "./linklower.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
-function LinkLower({ name, linkColor, children }) {
+function LinkLower({
+  name,
+  linkColor,
+  children,
+  fontSize = "var(--detail-fs)",
+}) {
   const setDropSize = (e) => {
     e.preventDefault();
     const dropdownEl = document.getElementById("drop-content");
@@ -23,7 +28,7 @@ function LinkLower({ name, linkColor, children }) {
         onMouseOver={(e) => setDropSize(e)}
         onMouseLeave={(e) => resetDropSize(e)}
       >
-        <a style={{ color: linkColor, cursor: "pointer" }}>
+        <a style={{ color: linkColor, cursor: "pointer", fontSize: fontSize }}>
           {name} <FontAwesomeIcon icon={faAngleDown} />
         </a>
         <div className="drop__content" id="drop-content">
