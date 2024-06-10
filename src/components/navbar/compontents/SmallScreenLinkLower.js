@@ -27,13 +27,10 @@ function SmallScreenLinkLower({
 
   return (
     <>
-      <div
-        className="small-drop"
-        id="small-drop"
-        onClick={(e) => toggleMenu(e)}
-      >
+      <div className="small-drop" id="small-drop">
         <a
           className="small-link"
+          onClick={(e) => toggleMenu(e)}
           style={{ color: linkColor, cursor: "pointer", fontSize: fontSize }}
         >
           {name} <FontAwesomeIcon icon={faAngleDown} />
