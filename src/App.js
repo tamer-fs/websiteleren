@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import Hero from "./contents/hero/Hero";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   useEffect(() => {
@@ -23,7 +25,12 @@ function App() {
 
   return (
     <>
-      <Hero />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" Component={HomePage} />\
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

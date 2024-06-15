@@ -2,13 +2,19 @@
   position: fixed;
   top: 0px;
 
-  background-color: var(--color-black);
+  background-color: transparent;
 
   box-sizing: border-box;
   width: 100vw;
 
   z-index: 3;
   padding: 0px 15px;
+
+  transition: 0.3s ease background-color;
+}
+
+.nav-bar:hover {
+  background-color: var(--color-black);
 }
 
 .nav-bar__elements-container {
@@ -344,5 +350,8 @@ a:hover {
   }
   .nav-bar__elements-container--links-small {
     display: flex;
+  }
+  .nav-bar {
+    padding: 20px 15px;
   }
 }

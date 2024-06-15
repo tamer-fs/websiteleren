@@ -12,6 +12,7 @@
 .drop:hover .drop__content {
   border-top: 1px solid #2a2d2e;
   height: min(50vh, 400px);
+  box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, 0.5);
 }
 
 .drop__content > * {

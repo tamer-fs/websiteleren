@@ -6,6 +6,8 @@
     "@babel/preset-env": "^7.24.6",
     "@babel/preset-react": "^7.24.6",
     "@babel/register": "^7.24.6",
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.19.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -21,6 +23,7 @@
     "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

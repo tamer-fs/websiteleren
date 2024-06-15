@@ -12,9 +12,9 @@ body {
   --color-blue: #00a6fb;
   --color-grey: #e0e0e0;
   --color-white: #f5f5f5;
-  --color-black: #212121;
+  --color-black: #111111;
 
-  --h1-fs: 64px;
+  --h1-fs: 100px;
   --h2-fs: 48px;
   --h3-fs: 32px;
   --p-fs: 20px;
@@ -58,14 +58,14 @@ button {
 .button--secondary {
   padding: 8px 15px;
   border-radius: 100px;
-  border: 2px solid var(--color-blue);
+  border: 2px solid var(--color-white);
   background-color: transparent;
-  color: var(--color-blue);
+  color: var(--color-white);
   font-size: var(--detail-fs);
 }
 
 .button--secondary:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-white);
   color: var(--color-black);
   font-weight: 600;
 }
@@ -104,9 +104,9 @@ button {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   :root {
-    --h1-fs: 56px;
+    --h1-fs: 70px;
     --h2-fs: 40px;
     --h3-fs: 30px;
     --p-fs: 16px;
@@ -114,9 +114,9 @@ button {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   :root {
-    --h1-fs: 50px;
+    --h1-fs: 60px;
     --h2-fs: 35px;
     --h3-fs: 25px;
     --p-fs: 14px;
