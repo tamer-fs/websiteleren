@@ -9,7 +9,9 @@ function Hero() {
     <>
       <main className="hero-container">
         <div className="hero-text">
-          <h1>Moderne website laten maken</h1>
+          <h1>
+            <strong>Aantrekkelijke</strong> website laten maken
+          </h1>
           <div className="buttons-container">
             <p>
               Far far away, behind the word mountains, far from the countries

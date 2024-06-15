@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./navbar.css";
 import Droplink from "../droplink/Droplink";
 
@@ -71,6 +71,7 @@ function Navbar() {
             <a>Link 4</a>
             <button className="button--secondary">Vraag Offerte Aan</button>
           </div>
+
           <div className="nav-bar__elements-container--links-small">
             <div onClick={(e) => toggleMenu(e)}>
               <p>menu</p>
